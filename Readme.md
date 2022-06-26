@@ -1,13 +1,13 @@
 Example of usage: 
-
+```ruby
 require './app.rb'
 
 c1 = Carriage.new('cargo', 1)
-...
+#... etc
 c5 = Carriage.new('cargo', 5)
 
 s1 = Station.new('Station1')
-...
+#... etc
 s5 = Station.new('Station5')
 
 t1 = Train.new(1, 'cargo', 3)
@@ -33,3 +33,4 @@ r1.add_station(s3, 0) # add first
 
 t1.set_route(r1) # t1.current_station = s3, t1.next_station = s2, t1.prev_station = nil
 t1.move_next # t1.current_station = s2, s2.trains=[t1], s1.trains=[]
+```
